@@ -59,4 +59,7 @@ public abstract class Habitacion {
 
     public abstract double calcularPrecio();
 
+    @Override
+    public abstract String toString();
+
 }
