@@ -1,14 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package notificaciones;
 
-/**
- *
- * @author Fede
- */
-public class Notificador {
+import reservas.IObservadorReserva;
+import reservas.Reserva;
+
+
+public class Notificador implements IObservadorReserva{
+    
+    //falta el strategy de notificador
+    public void setNotificador(){
+        
+    }
+    
+    public void enviar(){
+        
+    }
+    
+  
+
+    @Override
+    public void notificarCambio(Reserva r) {
+        //falta la creacion de reserva
+        
+    }
     
 }
