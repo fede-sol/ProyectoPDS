@@ -30,9 +30,9 @@ public class GestorReservas {
     }
     
     public void notificarCambio(Reserva r){
-        for (IObservadorReserva observador : observadores) {
-            
-        }
+        for (IObservadorReserva observador : observadores)
+            observador.notificarCambio(r);
+        
     }
     
     public void agregarObservador(IObservadorReserva observador){
