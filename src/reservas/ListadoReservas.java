@@ -7,8 +7,15 @@ public class ListadoReservas {
 
     private List<Reserva> listaReservas;
 
+
     public ListadoReservas(){
 
         listaReservas = new LinkedList<>();
     }
+    
+    public List<Reserva> getListaReservas() {
+        return listaReservas;
+    }
+
+   
 }
