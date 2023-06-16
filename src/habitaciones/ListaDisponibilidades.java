@@ -14,4 +14,7 @@ public class ListaDisponibilidades {
         disponibilidades.add(disponibilidad);
     }
 
+    public LinkedList<Disponibilidad> getListaDisponibilidades() {
+        return disponibilidades;
+    }
 }
