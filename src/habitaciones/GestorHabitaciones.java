@@ -23,7 +23,7 @@ public class GestorHabitaciones {
 
         for (Habitacion habitacion: listaHabitaciones) {
             if (habitacion.getCantPersonas() == filtro.getCantPersonas() && habitacion.toString().equals(filtro.getTipoHabitacion())
-            && estaDisponible(habitacion, filtro.getFechaIni(), filtro.getFechaFin())) {
+            && estaDisponible(habitacion, filtro.getFechaIni(), filtro.getFechaFin()) && tieneExtras(habitacion, filtro.getExtras())) {
                 habitacionesDisponibles.add(habitacion);
             }
         }
@@ -34,13 +34,26 @@ public class GestorHabitaciones {
     private boolean estaDisponible(Habitacion habitacion, LocalDate fechaIni, LocalDate fechaFin) {
         boolean estaDisponible = true;
         for (Disponibilidad disponibilidad: habitacion.getListaDisponibilidades().getListaDisponibilidades()) {
-            if (fechaIni.isBefore(disponibilidad.getFechaFin()) || fechaIni.isEqual(disponibilidad.getFechaFin())
-            && (fechaFin.isAfter(disponibilidad.getFechaIni())) || fechaFin.isEqual(disponibilidad.getFechaFin())) {
+            if (fechaIni.isBefore(disponibilidad.getFechaFin()) && (fechaFin.isAfter(disponibilidad.getFechaIni()))) {
                 estaDisponible = false;
                 break;
             }
         }
         return estaDisponible;
     }
+
+    public boolean tieneExtras(Habitacion habitacion, LinkedList<Extra> extras) {
+        boolean tieneExtras = true;
+        for (Extra extra: extras) {
+            String textoExtra = extra.toString();
+            if (!habitacion.getListaExtras().stream().anyMatch(extraHabitacion -> extraHabitacion.toString().equals(textoExtra))) {
+                tieneExtras = false;
+                break;
+            }
+        }
+        return tieneExtras;
+    }
+
+
 
 }
