@@ -14,6 +14,10 @@ public class ListaDisponibilidades {
         disponibilidades.add(disponibilidad);
     }
 
+    public void removerDisponibilidad(Disponibilidad disponibilidad) {
+        disponibilidades.remove(disponibilidad);
+    }
+
     public LinkedList<Disponibilidad> getListaDisponibilidades() {
         return disponibilidades;
     }

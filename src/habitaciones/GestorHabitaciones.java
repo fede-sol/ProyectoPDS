@@ -1,14 +1,11 @@
 package habitaciones;
 
-import reservas.ListadoReservas;
-
 import java.time.LocalDate;
 import java.util.LinkedList;
 
 public class GestorHabitaciones {
 
     private LinkedList<Habitacion> listaHabitaciones;
-    private ListadoReservas listadoReservas;
 
     public GestorHabitaciones() {
         listaHabitaciones = new LinkedList<Habitacion>();
@@ -16,6 +13,10 @@ public class GestorHabitaciones {
 
     public void agregarHabitacion(Habitacion habitacion) {
         listaHabitaciones.add(habitacion);
+    }
+
+    public LinkedList<Habitacion> getListaHabitaciones() {
+        return (LinkedList<Habitacion>) listaHabitaciones.clone();
     }
 
     public LinkedList<Habitacion> filtrarHabitaciones(Filtro filtro) {
@@ -31,7 +32,7 @@ public class GestorHabitaciones {
         return habitacionesDisponibles;
     }
 
-    private boolean estaDisponible(Habitacion habitacion, LocalDate fechaIni, LocalDate fechaFin) {
+    public boolean estaDisponible(Habitacion habitacion, LocalDate fechaIni, LocalDate fechaFin) {
         boolean estaDisponible = true;
         for (Disponibilidad disponibilidad: habitacion.getListaDisponibilidades().getListaDisponibilidades()) {
             if (fechaIni.isBefore(disponibilidad.getFechaFin()) && (fechaFin.isAfter(disponibilidad.getFechaIni()))) {
@@ -42,7 +43,7 @@ public class GestorHabitaciones {
         return estaDisponible;
     }
 
-    public boolean tieneExtras(Habitacion habitacion, LinkedList<Extra> extras) {
+    private boolean tieneExtras(Habitacion habitacion, LinkedList<Extra> extras) {
         boolean tieneExtras = true;
         for (Extra extra: extras) {
             String textoExtra = extra.toString();
@@ -54,6 +55,8 @@ public class GestorHabitaciones {
         return tieneExtras;
     }
 
-
+    public ReporteHabitaciones generarReporte(LocalDate fecha) {
+        return new ReporteHabitaciones(this, fecha);
+    }
 
 }
