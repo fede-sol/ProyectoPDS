@@ -1,14 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package facturacion;
 
-/**
- *
- * @author Fede
- */
-class ListadoFactura {
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListadoFactura {
+    
+    private List<Factura> listadoFacturas;
+    
+    public ListadoFactura(){
+        listadoFacturas = new ArrayList<>();
+    }
+
+    public List<Factura> getListadoFacturas() {
+        return listadoFacturas;
+    }
     
 }
