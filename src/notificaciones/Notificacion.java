@@ -5,6 +5,11 @@ import facturacion.Factura;
 public class Notificacion {
     private String destinatario;
     private String cuerpoMensaje;
+
+    public Notificacion(String destinatario, String cuerpoMensaje) {
+        this.destinatario = destinatario;
+        this.cuerpoMensaje = cuerpoMensaje;
+    }
     private Factura factura;
 
     public String getDestinatario() {

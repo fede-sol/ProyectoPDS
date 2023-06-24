@@ -1,4 +1,7 @@
-package notificaciones;
+package notificaciones.adaptadores;
+
+import notificaciones.Notificacion;
+import notificaciones.email.IEmailApi;
 
 public class AdaptadorGmail implements IEmailApi {
 	    @Override
