@@ -1,5 +1,6 @@
 package notificaciones;
 
+import reservas.EstadoPendiente;
 import reservas.IObservadorReserva;
 import reservas.Reserva;
 
@@ -21,11 +22,23 @@ public class Notificador implements IObservadorReserva{
     @Override
     public void notificarCambio(Reserva r) {
         
-        enviar(new Notificacion("", "Su reserva ha sido creada exitosamente"));
+        switch(r.getEstadoReserva().getClass().getName()){
+            case "EstadoPendiente":
+                enviar(new Notificacion(r.getCliente().getPreferenciaContacto().getMedioContacto(), "Su reserva ha sido creada exitosamente"));
+            break;
+            case "EstadoPagado":
+                enviar(new Notificacion(r.getCliente().getPreferenciaContacto().getMedioContacto(), "Su reserva ha sido pagada exitosamente"));
+            break;
+            case "EstadoCancelado":
+                enviar(new Notificacion(r.getCliente().getPreferenciaContacto().getMedioContacto(), "Su reserva ha sido cancelada"));
+            break;
+        }
+                
+                
         
-        enviar(new Notificacion("", "Su reserva ha sido pagada exitosamente"));
         
-        enviar(new Notificacion("", "Su reserva ha sido cancelada"));
+        
+        
         
     }
     
