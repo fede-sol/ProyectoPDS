@@ -7,6 +7,7 @@ import habitaciones.Habitacion;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import pagos.IMedioPago;
 
 
 public class GestorReservas {
@@ -45,11 +46,21 @@ public class GestorReservas {
     public void cancelarReserva(int nroReserva){
         
         Reserva r = buscarReserva(nroReserva);
+        r.cancelar();
         listadoReservas.getListaReservas().remove(r);
         notificarCambio(r);
     }
     
-    public void pagarReserva(Reserva r){
+    public void pagarReserva(int nroReserva,IMedioPago medioDePago){
+        Reserva r = buscarReserva(nroReserva);
+        r.setMedioPago(medioDePago);
+        
+        boolean pagoCorrecto = r.pagar();
+        
+        if (pagoCorrecto)
+            r.setFactura(gestorFacturas.generarFactura(r));
+            
+        notificarCambio(r);
         
     }
     

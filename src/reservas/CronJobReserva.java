@@ -15,6 +15,6 @@ public class CronJobReserva {
     public void ejecutarChequeoDePago(){
         
         if(reserva.getEstadoReserva().getClass().equals(EstadoPendiente.class))
-            gestorReservas.cancelarReserva(reserva);
+            gestorReservas.cancelarReserva(reserva.getNro());
     }
 }

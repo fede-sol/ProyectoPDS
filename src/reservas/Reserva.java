@@ -1,5 +1,6 @@
 package reservas;
 
+import facturacion.Factura;
 import java.time.LocalDateTime;
 
 import habitaciones.Disponibilidad;
@@ -18,13 +19,14 @@ public class Reserva {
     private EstadoReserva estadoReserva;
     private Habitacion habitacion;
     private Disponibilidad disponibilidad;
+    private Factura factura;
 
     public Reserva(int nro, Cliente cliente, List<Huesped> huespedes, Habitacion habitacion, Disponibilidad disponibilidad,IPoliticaReserva politicaReserva) {
         this.nroReserva = nro;
         this.fechaCreacion = LocalDateTime.now();
         this.cliente = cliente;
         this.huespedes = huespedes;
-        this.estadoReserva = new EstadoPendiente();
+        this.estadoReserva = new EstadoPendiente(this);
         this.habitacion = habitacion;
         this.disponibilidad = disponibilidad;
         this.politicaReserva = politicaReserva;
@@ -55,8 +57,8 @@ public class Reserva {
         this.estadoReserva = estadoReserva;
     }
 
-    public void pagar() {
-        estadoReserva.pagar();
+    public boolean pagar() {
+        return estadoReserva.pagar();
     }
 
     public void cancelar() {
@@ -70,10 +72,10 @@ public class Reserva {
      * Sección de getters y setters
      */
     public int getNro() {
-        return nro;
+        return nroReserva;
     }
     public void setNro(int nro) {
-        this.nro = nro;
+        this.nroReserva = nro;
     }
 
     public LocalDateTime getFechaCreacion() {
@@ -126,6 +128,14 @@ public class Reserva {
 
     public IMedioPago getMedioPago() {
         return medioPago;
+    }
+
+    public Factura getFactura() {
+        return factura;
+    }
+
+    public void setFactura(Factura factura) {
+        this.factura = factura;
     }
     
     

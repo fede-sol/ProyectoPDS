@@ -2,6 +2,10 @@ package reservas;
 
 public class EstadoPagado extends EstadoReserva {
 
+    public EstadoPagado(Reserva reserva) {
+        super(reserva);
+    }
+
     @Override
     public boolean pagar() {
         System.out.println("La reserva ya está pagada");
