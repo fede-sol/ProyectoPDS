@@ -23,7 +23,11 @@ public class Reserva {
     
 
     public double calcularMonto() {
-        return habitacion.calcularPrecio()-(1-politicaReserva.getPorcentaje()/100);
+        if(politicaReserva.getPorcentaje() < 0)
+            return habitacion.calcularPrecio()*(1-politicaReserva.getPorcentaje()*-1/100);
+        else
+            return habitacion.calcularPrecio()+(habitacion.calcularPrecio()*(politicaReserva.getPorcentaje()/100));
+        
     }
 
     public void setPoliticaReserva(IPoliticaReserva politicaReserva) {
