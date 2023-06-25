@@ -6,20 +6,26 @@ import reservas.Reserva;
 
 public class Notificador implements IObservadorReserva{
     
-    //falta el strategy de notificador
-    public void setNotificador(){
-        
+    IMedioNotificacion medioNotificacion;
+    
+    public void setNotificador(IMedioNotificacion medioNotificacion){
+        this.medioNotificacion = medioNotificacion;
     }
     
-    public void enviar(){
-        
+    public void enviar(Notificacion notificacion){
+        medioNotificacion.enviarNotificacion(notificacion);
     }
     
   
 
     @Override
     public void notificarCambio(Reserva r) {
-        //falta la creacion de reserva
+        
+        enviar(new Notificacion("", "Su reserva ha sido creada exitosamente"));
+        
+        enviar(new Notificacion("", "Su reserva ha sido pagada exitosamente"));
+        
+        enviar(new Notificacion("", "Su reserva ha sido cancelada"));
         
     }
     
