@@ -1,4 +1,4 @@
-package notificaciones;
+package apis;
 
 public class GmailAPI {
 	public final void sendMAIL (String mailDestino, String message) {

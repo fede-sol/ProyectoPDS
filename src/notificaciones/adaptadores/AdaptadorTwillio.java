@@ -1,6 +1,6 @@
 package notificaciones.adaptadores;
 
-import notificaciones.TwillioAPI;
+import apis.TwillioAPI;
 import notificaciones.Notificacion;
 import notificaciones.whatsapp.IWhatsappApi;
 import notificaciones.sms.ISmsApi;

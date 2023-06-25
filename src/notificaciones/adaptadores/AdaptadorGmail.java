@@ -1,6 +1,6 @@
 package notificaciones.adaptadores;
 
-import notificaciones.GmailAPI;
+import apis.GmailAPI;
 import notificaciones.Notificacion;
 import notificaciones.email.IEmailApi;
 

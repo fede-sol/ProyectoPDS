@@ -1,4 +1,4 @@
-package notificaciones;
+package apis;
 
 public class TwillioAPI {
 	public final void sendSMS (String recipient, String message) {

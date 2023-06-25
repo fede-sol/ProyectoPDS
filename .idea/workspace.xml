@@ -5,31 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d92d35de-cc56-4c73-b122-62753d8738c9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoPDS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoPDS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/facturacion/GestorFacturas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/facturacion/GestorFacturas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/facturacion/ListadoFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/facturacion/ListadoFactura.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/habitaciones/GestorHabitaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/habitaciones/GestorHabitaciones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/habitaciones/Habitacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/habitaciones/Habitacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notificaciones/GmailAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/GmailAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notificaciones/Notificador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/Notificador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notificaciones/TwillioAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/TwillioAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notificaciones/GmailAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apis/GmailAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notificaciones/TwillioAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apis/TwillioAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/notificaciones/adaptadores/AdaptadorGmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/adaptadores/AdaptadorGmail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/notificaciones/adaptadores/AdaptadorTwillio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/adaptadores/AdaptadorTwillio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notificaciones/email/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/email/NotificadorEmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notificaciones/sms/Sms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/sms/NotificadorSms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notificaciones/whatsapp/Whatsapp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/whatsapp/NotificadorWhatsapp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pagos/AdaptadorMercadoPago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/AdaptadorMercadoPago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pagos/TarjetaCredito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/TarjetaCredito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pagos/TarjetaDebito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/TarjetaDebito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reservas/AnticipacionDosMeses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/AnticipacionDosMeses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reservas/AnticipacionQuinceDias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/AnticipacionQuinceDias.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reservas/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reservas/GestorReservas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/GestorReservas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reservas/ListadoClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/ListadoClientes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reservas/ListadoReservas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/ListadoReservas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reservas/Sms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/Sms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reservas/Whatsapp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/Whatsapp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pagos/MercadoPago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apis/MercadoPagoAPI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,22 +36,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="apis" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="reservas" />

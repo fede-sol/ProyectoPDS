@@ -2,22 +2,24 @@ package pagos;
 
 // Tendria que ir un import de MercadoPago
 
+import apis.MercadoPagoAPI;
+
 public class AdaptadorMercadoPago implements PagosApi{
 	
-	private MercadoPago mercadoPago;
+	private MercadoPagoAPI mercadoPagoAPI;
 
     public AdaptadorMercadoPago() {
-        this.mercadoPago = new MercadoPago();
+        this.mercadoPagoAPI = new MercadoPagoAPI();
     }
 
     @Override
     public boolean pagarConDebito(TarjetaDebito td) {
-        return mercadoPago.pagarConDebitoMP(td);
+        return mercadoPagoAPI.pagarConDebitoMP();
     }
 
     @Override
     public boolean pagarConCredito(TarjetaCredito tc) {
-        return mercadoPago.pagarConCreditoMP(tc);
+        return mercadoPagoAPI.pagarConCreditoMP();
     }	
 
 }
