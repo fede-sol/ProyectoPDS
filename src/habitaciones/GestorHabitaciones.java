@@ -58,5 +58,15 @@ public class GestorHabitaciones {
     public ReporteHabitaciones generarReporte(LocalDate fecha) {
         return new ReporteHabitaciones(this, fecha);
     }
+    
+    public Habitacion buscarHabitacion(int nroHabitacion){
+        for (Habitacion habitacion : listaHabitaciones) {
+            if(habitacion.getNroHabitacion() == nroHabitacion)
+                return habitacion;
+        }
+        
+        System.out.println("Esa habitación no existe");
+        return null;
+    }
 
 }
