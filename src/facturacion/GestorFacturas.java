@@ -8,7 +8,14 @@ public class GestorFacturas {
     private ListadoFactura listadoFacturas;
     
     public Factura generarFactura(Reserva r){
-        //Falta que los datos se reflejen en la factura
-        return new Factura();
+        Factura f = new Factura(listadoFacturas.getListadoFacturas().size(),
+                                r.getCliente().getNombre(),
+                                r.getCliente().getApellido(),
+                                21,
+                                r.getMedioPago().toString(),
+                                r.calcularMonto());
+        
+        listadoFacturas.getListadoFacturas().add(f);
+        return f;
     }
 }

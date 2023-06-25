@@ -1,20 +1,23 @@
 package pagos;
 
-public class Transferencia implements IMedioPago{
-	
-	private String comprobanteDeTransferencia;
+public class Transferencia implements IMedioPago {
 
-	public Transferencia(String comprobanteDeTransferencia) {
-		this.comprobanteDeTransferencia = comprobanteDeTransferencia;
-		// TODO Auto-generated constructor stub
-	}
+    private String comprobanteDeTransferencia;
 
-	@Override
-	public boolean pagar() {
-		// TODO Auto-generated method stub
-		return true;
-	}
-	
-	
+    public Transferencia(String comprobanteDeTransferencia) {
+        this.comprobanteDeTransferencia = comprobanteDeTransferencia;
+        // TODO Auto-generated constructor stub
+    }
+
+    @Override
+    public boolean pagar() {
+        // TODO Auto-generated method stub
+        return true;
+    }
+
+    @Override
+    public String toString() {
+        return "Transferencia";
+    }
 
 }

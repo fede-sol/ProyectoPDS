@@ -3,7 +3,25 @@ package facturacion;
 public class Factura {
     private int nroFactura;
     private String nombre;
+    private String apellido;
+    private int iva;
+    private String medioDePago;
+    private double monto;
 
+    public Factura(int nroFactura, String nombre, String apellido, int iva, String medioDePago, double monto) {
+        this.nroFactura = nroFactura;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.iva = iva;
+        this.medioDePago = medioDePago;
+        this.monto = monto;
+    }
+    
+    
+    
+    
+    
+    
     public int getNroFactura() {
         return nroFactura;
     }
@@ -51,8 +69,5 @@ public class Factura {
     public void setMonto(double monto) {
         this.monto = monto;
     }
-    private String apellido;
-    private int iva;
-    private String medioDePago;
-    private double monto;
+    
 }
