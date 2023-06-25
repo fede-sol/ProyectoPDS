@@ -1,7 +1,12 @@
 package reservas;
 
 public class Sms implements IMedioContacto {
-    String celular;
+    
+    private String celular;
+
+    public Sms(String celular) {
+        this.celular = celular;
+    }
 
     public String getMedioContacto () {
         return celular;

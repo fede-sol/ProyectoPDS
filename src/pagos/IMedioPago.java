@@ -2,6 +2,6 @@ package pagos;
 
 
 public interface IMedioPago {
-	boolean pagar();
+    public boolean pagar();
 
 }

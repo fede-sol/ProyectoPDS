@@ -101,6 +101,10 @@ public class Reserva {
     public void setDisponibilidad(Disponibilidad disponibilidad) {
         this.disponibilidad = disponibilidad;
     }
+
+    public IMedioPago getMedioPago() {
+        return medioPago;
+    }
     
     
     
