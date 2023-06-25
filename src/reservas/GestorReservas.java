@@ -47,6 +47,7 @@ public class GestorReservas {
         
         Reserva r = buscarReserva(nroReserva);
         r.cancelar();
+        r.getHabitacion().getListaDisponibilidades().removerDisponibilidad(r.getDisponibilidad());
         listadoReservas.getListaReservas().remove(r);
         notificarCambio(r);
     }
