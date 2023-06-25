@@ -11,4 +11,9 @@ public class Whatsapp implements IMedioContacto {
     public String getMedioContacto () {
         return celular;
     }
+
+    @Override
+    public String toString(){
+        return "Whatsapp";
+    }
 }

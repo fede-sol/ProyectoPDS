@@ -6,8 +6,8 @@ public class AdaptadorMercadoPago implements PagosApi{
 	
 	private MercadoPago mercadoPago;
 
-    public AdaptadorMercadoPago(MercadoPago mercadoPago) {
-        this.mercadoPago = mercadoPago;
+    public AdaptadorMercadoPago() {
+        this.mercadoPago = new MercadoPago();
     }
 
     @Override

@@ -7,9 +7,21 @@ public class GestorHabitaciones {
 
     private LinkedList<Habitacion> listaHabitaciones;
 
+    private static GestorHabitaciones instancia;
+    public static GestorHabitaciones getInstancia(){
+        if (instancia == null)
+            instancia = new GestorHabitaciones();
+
+        return instancia;
+    }
+
     public GestorHabitaciones() {
         listaHabitaciones = new LinkedList<Habitacion>();
+
+
     }
+
+
 
     public void agregarHabitacion(Habitacion habitacion) {
         listaHabitaciones.add(habitacion);
@@ -42,6 +54,7 @@ public class GestorHabitaciones {
         }
         return estaDisponible;
     }
+
 
     private boolean tieneExtras(Habitacion habitacion, LinkedList<Extra> extras) {
         boolean tieneExtras = true;

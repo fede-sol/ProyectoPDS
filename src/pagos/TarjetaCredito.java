@@ -8,13 +8,14 @@ public class TarjetaCredito implements IMedioPago{
 	private String titular;
 	private PagosApi pagoApi;
 	
-	public TarjetaCredito(String numero, String cvv, String fechaVencimiento, String titular, PagosApi pagoApi) {
+	public TarjetaCredito(String numero, String cvv, String fechaVencimiento, String titular) {
 		this.numero = numero;
 		this.cvv = cvv;
 		this.fechaVencimiento = fechaVencimiento;
 		this.titular = titular;
-		//this.pagoApi = pagoApi;			
-		// TODO Auto-generated constructor stub    REVISAR SI VA PAGO API
+		this.pagoApi = new AdaptadorMercadoPago();
+
+
 	}
 	
 	@Override

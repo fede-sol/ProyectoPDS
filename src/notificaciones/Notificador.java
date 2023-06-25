@@ -1,8 +1,9 @@
 package notificaciones;
 
-import reservas.EstadoPendiente;
-import reservas.IObservadorReserva;
-import reservas.Reserva;
+import notificaciones.email.NotificadorEmail;
+import notificaciones.sms.NotificadorSms;
+import notificaciones.whatsapp.NotificadorWhatsapp;
+import reservas.*;
 
 
 public class Notificador implements IObservadorReserva{
@@ -21,24 +22,31 @@ public class Notificador implements IObservadorReserva{
 
     @Override
     public void notificarCambio(Reserva r) {
-        
-        switch(r.getEstadoReserva().getClass().getName()){
-            case "EstadoPendiente":
-                enviar(new Notificacion(r.getCliente().getPreferenciaContacto().getMedioContacto(), "Su reserva ha sido creada exitosamente"));
-            break;
-            case "EstadoPagado":
-                enviar(new Notificacion(r.getCliente().getPreferenciaContacto().getMedioContacto(), "Su reserva ha sido pagada exitosamente"));
-            break;
-            case "EstadoCancelado":
-                enviar(new Notificacion(r.getCliente().getPreferenciaContacto().getMedioContacto(), "Su reserva ha sido cancelada"));
-            break;
+
+
+
+        if (r.getCliente().getPreferenciaContacto() instanceof Whatsapp) {
+            setNotificador(new NotificadorWhatsapp());
+        } else if (r.getCliente().getPreferenciaContacto() instanceof Sms) {
+            setNotificador(new NotificadorSms());
+        } else if (r.getCliente().getPreferenciaContacto() instanceof Email) {
+            setNotificador(new NotificadorEmail());
         }
+
+
+
+        if (r.getEstadoReserva() instanceof EstadoPendiente) {
+            enviar(new Notificacion(r.getCliente().getPreferenciaContacto().getMedioContacto(), "Su reserva ha sido creada exitosamente"));
+        } else if (r.getEstadoReserva() instanceof EstadoPagado) {
+            Notificacion n = new Notificacion(r.getCliente().getPreferenciaContacto().getMedioContacto(), "Su reserva ha sido pagada exitosamente");
+            n.setFactura(r.getFactura());
+            enviar(n);
+        } else if (r.getEstadoReserva() instanceof EstadoCancelado) {
+            enviar(new Notificacion(r.getCliente().getPreferenciaContacto().getMedioContacto(), "Su reserva ha sido cancelada"));
+        }
+
                 
-                
-        
-        
-        
-        
+
         
     }
     

@@ -19,28 +19,38 @@ public class GestorReservas {
     private GestorHabitaciones gestorHabitaciones;
     
     public GestorReservas(){
-        listadoReservas = new ListadoReservas();
+        listadoReservas = ListadoReservas.getInstancia();
         gestorFacturas = new GestorFacturas();
         observadores = new ArrayList<>();  
-        listadoClientes = new ListadoClientes();
-        gestorHabitaciones = new GestorHabitaciones();
+        listadoClientes = ListadoClientes.getInstancia();
+        gestorHabitaciones = GestorHabitaciones.getInstancia();
     }
     
     public void generarReserva(String dniCliente,List<Huesped> listaHuespedes,int nroHabitacion,LocalDate fechaIni,LocalDate fechaFin,IPoliticaReserva politica){
         
         Habitacion habitacionReservada = gestorHabitaciones.buscarHabitacion(nroHabitacion);
         Disponibilidad fechas = new Disponibilidad(fechaIni, fechaFin);
-        Reserva r = new Reserva(listadoReservas.getListaReservas().size(),
-                                listadoClientes.buscarCliente(dniCliente),
-                                listaHuespedes,
-                                habitacionReservada,
-                                fechas,
-                                politica);
-        
-        listadoReservas.getListaReservas().add(r);
-        CronJobReserva job = new CronJobReserva(r);
-        habitacionReservada.getListaDisponibilidades().agregarDisponibilidad(fechas);
-        notificarCambio(r);
+
+        if(gestorHabitaciones.estaDisponible(habitacionReservada,fechaIni,fechaFin)){
+
+            Reserva r = new Reserva(listadoReservas.getListaReservas().size(),
+                                    listadoClientes.buscarCliente(dniCliente),
+                                    listaHuespedes,
+                                    habitacionReservada,
+                                    fechas,
+                                    politica);
+
+            listadoReservas.getListaReservas().add(r);
+            CronJobReserva job = new CronJobReserva(r);
+            habitacionReservada.getListaDisponibilidades().agregarDisponibilidad(fechas);
+            notificarCambio(r);
+
+        }else {
+         System.out.println("No está disponible");
+
+        }
+
+
     }
     
     public void cancelarReserva(int nroReserva){

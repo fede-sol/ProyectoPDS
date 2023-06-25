@@ -2,11 +2,13 @@ package reservas;
 
 public class AnticipacionQuinceDias implements IPoliticaReserva {
 
-    private double monto = -15;
+    private double porcentaje = -15;
 
     @Override
     public double getPorcentaje() {
-        return monto;
+        return porcentaje;
     }
+
+
 
 }

@@ -8,12 +8,12 @@ public class TarjetaDebito implements IMedioPago {
     private String titular;
     private PagosApi pagoApi;
 
-    public TarjetaDebito(String numero, String cvv, String fechaVencimiento, String titular, PagosApi pagoApi) {
+    public TarjetaDebito(String numero, String cvv, String fechaVencimiento, String titular) {
         this.numero = numero;
         this.cvv = cvv;
         this.fechaVencimiento = fechaVencimiento;
         this.titular = titular;
-        this.pagoApi = pagoApi;
+        this.pagoApi = new AdaptadorMercadoPago();
 
     }
 

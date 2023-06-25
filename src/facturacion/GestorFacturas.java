@@ -1,11 +1,16 @@
 package facturacion;
 
+import reservas.GestorReservas;
 import reservas.Reserva;
 
 
 public class GestorFacturas {
     
     private ListadoFactura listadoFacturas;
+
+    public GestorFacturas(){
+        listadoFacturas = ListadoFactura.getInstancia();
+    }
     
     public Factura generarFactura(Reserva r){
         Factura f = new Factura(listadoFacturas.getListadoFacturas().size(),

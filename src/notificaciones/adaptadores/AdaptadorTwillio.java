@@ -1,6 +1,6 @@
 package notificaciones.adaptadores;
 
-import Notificaciones.TwillioAPI;
+import notificaciones.TwillioAPI;
 import notificaciones.Notificacion;
 import notificaciones.whatsapp.IWhatsappApi;
 import notificaciones.sms.ISmsApi;
@@ -30,7 +30,6 @@ public class AdaptadorTwillio implements ISmsApi, IWhatsappApi {
         // Lógica de conexión con la API de Twilio para enviar el mensaje de WhatsApp
         System.out.println("Enviando mensaje de WhatsApp: " + notificacion.getCuerpoMensaje() + ", al destinatario: " + notificacion.getDestinatario());
         if (notificacion.getFactura() != null) {
-            System.out.println("Con la factura: " + notificacion.getFactura().getNroFactura());
             twillioApi.sendWP(notificacion.getDestinatario(), notificacion.getCuerpoMensaje()
                     + "\n \n La factura: Nro " + notificacion.getFactura().getNroFactura()
                     + "\n" + notificacion.getFactura().getMedioDePago()

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d92d35de-cc56-4c73-b122-62753d8738c9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoPDS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoPDS.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facturacion/GestorFacturas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/facturacion/GestorFacturas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/facturacion/ListadoFactura.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/facturacion/ListadoFactura.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/habitaciones/GestorHabitaciones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/habitaciones/GestorHabitaciones.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/habitaciones/Habitacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/habitaciones/Habitacion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notificaciones/GmailAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/GmailAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notificaciones/Notificador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/Notificador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notificaciones/TwillioAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/TwillioAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notificaciones/adaptadores/AdaptadorGmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/adaptadores/AdaptadorGmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notificaciones/adaptadores/AdaptadorTwillio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/adaptadores/AdaptadorTwillio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notificaciones/email/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/email/NotificadorEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notificaciones/sms/Sms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/sms/NotificadorSms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/notificaciones/whatsapp/Whatsapp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/whatsapp/NotificadorWhatsapp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pagos/AdaptadorMercadoPago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/AdaptadorMercadoPago.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pagos/TarjetaCredito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/TarjetaCredito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pagos/TarjetaDebito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/TarjetaDebito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reservas/AnticipacionDosMeses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/AnticipacionDosMeses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reservas/AnticipacionQuinceDias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/AnticipacionQuinceDias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reservas/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/Email.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reservas/GestorReservas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/GestorReservas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reservas/ListadoClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/ListadoClientes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reservas/ListadoReservas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/ListadoReservas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reservas/Sms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/Sms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reservas/Whatsapp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/Whatsapp.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2RiLAy4FWSj7XWfYezldnVNjiSd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="reservas" />
+      <recent name="habitaciones" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.GestorReservasTest.testCancelarYNotificar">
+    <configuration name="GestorHabitacionesTest.testFiltrarHabitacion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoPDS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="habitaciones.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="habitaciones" />
+      <option name="MAIN_CLASS_NAME" value="habitaciones.GestorHabitacionesTest" />
+      <option name="METHOD_NAME" value="testFiltrarHabitacion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestorHabitacionesTest.testGenerarReporte" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoPDS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="habitaciones.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="habitaciones" />
+      <option name="MAIN_CLASS_NAME" value="habitaciones.GestorHabitacionesTest" />
+      <option name="METHOD_NAME" value="testGenerarReporte" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestorReservasTest.testCancelarYNotificar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoPDS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reservas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="reservas" />
+      <option name="MAIN_CLASS_NAME" value="reservas.GestorReservasTest" />
+      <option name="METHOD_NAME" value="testCancelarYNotificar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestorReservasTest.testPagarYNotificar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoPDS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reservas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="reservas" />
+      <option name="MAIN_CLASS_NAME" value="reservas.GestorReservasTest" />
+      <option name="METHOD_NAME" value="testPagarYNotificar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestorReservasTest.testReservarYNotificar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoPDS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="reservas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="reservas" />
+      <option name="MAIN_CLASS_NAME" value="reservas.GestorReservasTest" />
+      <option name="METHOD_NAME" value="testReservarYNotificar" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.GestorReservasTest.testCancelarYNotificar" />
+        <item itemvalue="JUnit.GestorReservasTest.testPagarYNotificar" />
+        <item itemvalue="JUnit.GestorReservasTest.testReservarYNotificar" />
+        <item itemvalue="JUnit.GestorHabitacionesTest.testGenerarReporte" />
+        <item itemvalue="JUnit.GestorHabitacionesTest.testFiltrarHabitacion" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d92d35de-cc56-4c73-b122-62753d8738c9" name="Changes" comment="" />
+      <created>1687727818411</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687727818411</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

@@ -15,6 +15,7 @@ public abstract class Habitacion {
         this.cantPersonas = cantPersonas;
         this.montoBase = montoBase;
         this.listaExtras = listaExtras;
+        this.listaDisponibilidades = new ListaDisponibilidades();
     }
 
     public int getNroHabitacion() {

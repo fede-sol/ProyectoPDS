@@ -13,4 +13,9 @@ public class Email implements IMedioContacto {
         return email;
     }
 
+    @Override
+    public String toString(){
+        return "Email";
+    }
+
 }
