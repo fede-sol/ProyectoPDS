@@ -29,19 +29,24 @@ public class GestorReservas {
         
         Habitacion habitacionReservada = gestorHabitaciones.buscarHabitacion(nroHabitacion);
         Disponibilidad fechas = new Disponibilidad(fechaIni, fechaFin);
-        Reserva r = new Reserva(listadoClientes.buscarCliente(dniCliente),
+        Reserva r = new Reserva(listadoReservas.getListaReservas().size(),
+                                listadoClientes.buscarCliente(dniCliente),
                                 listaHuespedes,
                                 habitacionReservada,
                                 fechas,
                                 politica);
         
         listadoReservas.getListaReservas().add(r);
+        CronJobReserva job = new CronJobReserva(r);
         habitacionReservada.getListaDisponibilidades().agregarDisponibilidad(fechas);
         notificarCambio(r);
     }
     
-    public void cancelarReserva(Reserva r){
+    public void cancelarReserva(int nroReserva){
+        
+        Reserva r = buscarReserva(nroReserva);
         listadoReservas.getListaReservas().remove(r);
+        notificarCambio(r);
     }
     
     public void pagarReserva(Reserva r){
@@ -60,6 +65,15 @@ public class GestorReservas {
     
     public void eliminarObservador(IObservadorReserva observador){
         observadores.remove(observador);
+    }
+    
+    public Reserva buscarReserva(int nroReserva){
+        for (Reserva reserva : listadoReservas.getListaReservas()) {
+            if(reserva.getNro()==nroReserva)
+                return reserva;
+        }
+        
+        return null;
     }
     
 }

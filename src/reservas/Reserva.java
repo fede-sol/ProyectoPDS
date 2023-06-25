@@ -9,6 +9,7 @@ import pagos.IMedioPago;
 
 public class Reserva {
     
+    private int nroReserva;
     private LocalDateTime fechaCreacion;
     private Cliente cliente;
     private List<Huesped> huespedes;
@@ -18,7 +19,8 @@ public class Reserva {
     private Habitacion habitacion;
     private Disponibilidad disponibilidad;
 
-    public Reserva(Cliente cliente, List<Huesped> huespedes, Habitacion habitacion, Disponibilidad disponibilidad,IPoliticaReserva politicaReserva) {
+    public Reserva(int nro, Cliente cliente, List<Huesped> huespedes, Habitacion habitacion, Disponibilidad disponibilidad,IPoliticaReserva politicaReserva) {
+        this.nroReserva = nro;
         this.fechaCreacion = LocalDateTime.now();
         this.cliente = cliente;
         this.huespedes = huespedes;
@@ -63,12 +65,17 @@ public class Reserva {
 
     
     
-    
-    
+
     /*
      * Sección de getters y setters
      */
-    
+    public int getNro() {
+        return nro;
+    }
+    public void setNro(int nro) {
+        this.nro = nro;
+    }
+
     public LocalDateTime getFechaCreacion() {
         return fechaCreacion;
     }
