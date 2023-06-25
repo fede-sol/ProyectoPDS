@@ -1,8 +1,9 @@
 package reservas;
 
 public class Email implements IMedioContacto {
+    String email;
     public String getMedioContacto () {
-        return "Email";
+        return email;
     }
 
 }
