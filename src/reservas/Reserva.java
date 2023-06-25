@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 
 import habitaciones.Disponibilidad;
 import habitaciones.Habitacion;
+import java.util.List;
 import pagos.IMedioPago;
 
 public class Reserva {
@@ -17,7 +18,7 @@ public class Reserva {
     Disponibilidad disponibilidad;
 
     public double calcularMonto() {
-        return (IPoliticaReserva.getPorcentaje() * 100)/habitacion.calcularPrecio();
+        return habitacion.calcularPrecio()-(1-politicaReserva.getPorcentaje()/100);
     }
 
     public void setPoliticaReserva(IPoliticaReserva politicaReserva) {
