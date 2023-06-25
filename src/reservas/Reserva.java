@@ -17,6 +17,17 @@ public class Reserva {
     private EstadoReserva estadoReserva;
     private Habitacion habitacion;
     private Disponibilidad disponibilidad;
+
+    public Reserva(Cliente cliente, List<Huesped> huespedes, Habitacion habitacion, Disponibilidad disponibilidad,IPoliticaReserva politicaReserva) {
+        this.fechaCreacion = LocalDateTime.now();
+        this.cliente = cliente;
+        this.huespedes = huespedes;
+        this.estadoReserva = new EstadoPendiente();
+        this.habitacion = habitacion;
+        this.disponibilidad = disponibilidad;
+        this.politicaReserva = politicaReserva;
+        
+    }
     
 
     

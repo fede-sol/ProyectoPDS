@@ -1,14 +1,10 @@
 package reservas;
 
-abstract class EstadoReserva {
+public abstract class EstadoReserva {
     protected Reserva reserva;
 
-    public boolean pagar () {
-        return false;
-    }
+    public abstract boolean pagar ();
 
-    public void cancelar () {
-        System.out.println("La reserva no se puede cancelar");
-    }
+    public abstract void cancelar ();
 
 }
