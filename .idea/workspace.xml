@@ -8,14 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/apis/MercadoPagoAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apis/MercadoPagoAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pagos/AdaptadorMercadoPago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/AdaptadorMercadoPago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pagos/Efectivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/Efectivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pagos/IMedioPago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/IMedioPago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pagos/PagosApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/PagosApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pagos/TarjetaCredito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/TarjetaCredito.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pagos/TarjetaDebito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/TarjetaDebito.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pagos/Transferencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/Transferencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reservas/EstadoPendiente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/EstadoPendiente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/habitaciones/GestorHabitacionesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/habitaciones/GestorHabitacionesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
