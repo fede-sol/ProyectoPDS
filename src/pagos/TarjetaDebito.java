@@ -18,8 +18,8 @@ public class TarjetaDebito implements IMedioPago {
     }
 
     @Override
-    public boolean pagar() {
-        return pagoApi.pagarConDebito(this);
+    public boolean pagar(double monto) {
+        return pagoApi.pagarConDebito(this,monto);
 
     }
 

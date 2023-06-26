@@ -19,9 +19,9 @@ public class TarjetaCredito implements IMedioPago{
 	}
 	
 	@Override
-	public boolean pagar() {
-		return pagoApi.pagarConCredito(this);
-		// TODO Auto-generated method stub
+	public boolean pagar(double monto) {
+		return pagoApi.pagarConCredito(this,monto);
+
 	}
         
         @Override

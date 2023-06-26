@@ -6,12 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="d92d35de-cc56-4c73-b122-62753d8738c9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notificaciones/GmailAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apis/GmailAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notificaciones/TwillioAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apis/TwillioAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notificaciones/adaptadores/AdaptadorGmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/adaptadores/AdaptadorGmail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/notificaciones/adaptadores/AdaptadorTwillio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/notificaciones/adaptadores/AdaptadorTwillio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/apis/MercadoPagoAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apis/MercadoPagoAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pagos/AdaptadorMercadoPago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/AdaptadorMercadoPago.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pagos/MercadoPago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/apis/MercadoPagoAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pagos/Efectivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/Efectivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pagos/IMedioPago.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/IMedioPago.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pagos/PagosApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/PagosApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pagos/TarjetaCredito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/TarjetaCredito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pagos/TarjetaDebito.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/TarjetaDebito.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pagos/Transferencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pagos/Transferencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reservas/EstadoPendiente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/reservas/EstadoPendiente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/habitaciones/GestorHabitacionesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/habitaciones/GestorHabitacionesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +65,38 @@
       <recent name="habitaciones" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GestorReservasTest.testCancelarYNotificar">
+  <component name="RunManager" selected="JUnit.GestorHabitacionesTest.testFiltrarHabitacion">
+    <configuration name="GestorHabitacionesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoPDS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="habitaciones.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="habitaciones" />
+      <option name="MAIN_CLASS_NAME" value="habitaciones.GestorHabitacionesTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestorHabitacionesTest.testAgregarHabitacion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ProyectoPDS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="habitaciones.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="habitaciones" />
+      <option name="MAIN_CLASS_NAME" value="habitaciones.GestorHabitacionesTest" />
+      <option name="METHOD_NAME" value="testAgregarHabitacion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GestorHabitacionesTest.testFiltrarHabitacion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoPDS" />
       <extension name="coverage">
@@ -94,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GestorReservasTest.testCancelarYNotificar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ListadoClientesTest.testAgregarEliminarCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ProyectoPDS" />
       <extension name="coverage">
         <pattern>
@@ -103,40 +138,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="reservas" />
-      <option name="MAIN_CLASS_NAME" value="reservas.GestorReservasTest" />
-      <option name="METHOD_NAME" value="testCancelarYNotificar" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GestorReservasTest.testPagarYNotificar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoPDS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="reservas.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="reservas" />
-      <option name="MAIN_CLASS_NAME" value="reservas.GestorReservasTest" />
-      <option name="METHOD_NAME" value="testPagarYNotificar" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GestorReservasTest.testReservarYNotificar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="ProyectoPDS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="reservas.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="reservas" />
-      <option name="MAIN_CLASS_NAME" value="reservas.GestorReservasTest" />
-      <option name="METHOD_NAME" value="testReservarYNotificar" />
+      <option name="MAIN_CLASS_NAME" value="reservas.ListadoClientesTest" />
+      <option name="METHOD_NAME" value="testAgregarEliminarCliente" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.GestorReservasTest.testCancelarYNotificar" />
-        <item itemvalue="JUnit.GestorReservasTest.testPagarYNotificar" />
-        <item itemvalue="JUnit.GestorReservasTest.testReservarYNotificar" />
-        <item itemvalue="JUnit.GestorHabitacionesTest.testGenerarReporte" />
         <item itemvalue="JUnit.GestorHabitacionesTest.testFiltrarHabitacion" />
+        <item itemvalue="JUnit.GestorHabitacionesTest.testAgregarHabitacion" />
+        <item itemvalue="JUnit.GestorHabitacionesTest.testGenerarReporte" />
+        <item itemvalue="JUnit.GestorHabitacionesTest" />
+        <item itemvalue="JUnit.ListadoClientesTest.testAgregarEliminarCliente" />
       </list>
     </recent_temporary>
   </component>

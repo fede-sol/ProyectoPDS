@@ -4,13 +4,13 @@ package apis;
 
 public class MercadoPagoAPI {
 	
-	public boolean pagarConDebitoMP() {
-        System.out.println("Realizando pago con MercadoPago con tarjeta de débito.");
+	public boolean pagarConDebitoMP(double monto) {
+        System.out.println("Mercadopago: Pago con MercadoPago con tarjeta de débito. Monto: $"+monto);
         return true;
     }
 
-    public boolean pagarConCreditoMP() {
-        System.out.println("Realizando pago con MercadoPago con tarjeta de crédito.");
+    public boolean pagarConCreditoMP(double monto) {
+        System.out.println("Mercadopago: Pago realizado con tarjeta de crédito. Monto: $"+monto);
         return true;
     }
 

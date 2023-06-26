@@ -25,7 +25,7 @@ class GestorHabitacionesTest {
         h = new Suite(2,2,30000,new LinkedList<>(),10000);
         gestor.agregarHabitacion(h);
 
-        assertEquals(1,gestor.getListaHabitaciones().size());
+        assertEquals(2,gestor.getListaHabitaciones().size());
 
     }
 

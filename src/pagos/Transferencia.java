@@ -10,8 +10,9 @@ public class Transferencia implements IMedioPago {
     }
 
     @Override
-    public boolean pagar() {
-        // TODO Auto-generated method stub
+    public boolean pagar(double monto) {
+        System.out.println("Se pagaron $"+monto+ " por transferencia");
+
         return true;
     }
 

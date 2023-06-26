@@ -8,7 +8,7 @@ public class EstadoPendiente extends EstadoReserva {
 
     @Override
     public boolean pagar () {
-        boolean pagoCorrecto = reserva.getMedioPago().pagar();
+        boolean pagoCorrecto = reserva.getMedioPago().pagar(reserva.calcularMonto());
         if (pagoCorrecto)
             reserva.setEstado(new EstadoPagado(reserva));
         

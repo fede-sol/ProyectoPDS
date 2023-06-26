@@ -13,13 +13,13 @@ public class AdaptadorMercadoPago implements PagosApi{
     }
 
     @Override
-    public boolean pagarConDebito(TarjetaDebito td) {
-        return mercadoPagoAPI.pagarConDebitoMP();
+    public boolean pagarConDebito(TarjetaDebito td,double monto) {
+        return mercadoPagoAPI.pagarConDebitoMP(monto);
     }
 
     @Override
-    public boolean pagarConCredito(TarjetaCredito tc) {
-        return mercadoPagoAPI.pagarConCreditoMP();
+    public boolean pagarConCredito(TarjetaCredito tc,double monto) {
+        return mercadoPagoAPI.pagarConCreditoMP(monto);
     }	
 
 }
