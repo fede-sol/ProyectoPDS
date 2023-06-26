@@ -1,5 +1,7 @@
 package reservas;
 
+import clientes.Huesped;
+import clientes.ListadoClientes;
 import facturacion.GestorFacturas;
 import habitaciones.Disponibilidad;
 import habitaciones.GestorHabitaciones;
@@ -8,6 +10,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import pagos.IMedioPago;
+import reservas.politicas.IPoliticaReserva;
 
 
 public class GestorReservas {
@@ -26,7 +29,7 @@ public class GestorReservas {
         gestorHabitaciones = GestorHabitaciones.getInstancia();
     }
     
-    public void generarReserva(String dniCliente,List<Huesped> listaHuespedes,int nroHabitacion,LocalDate fechaIni,LocalDate fechaFin,IPoliticaReserva politica){
+    public void generarReserva(String dniCliente, List<Huesped> listaHuespedes, int nroHabitacion, LocalDate fechaIni, LocalDate fechaFin, IPoliticaReserva politica){
         
         Habitacion habitacionReservada = gestorHabitaciones.buscarHabitacion(nroHabitacion);
         Disponibilidad fechas = new Disponibilidad(fechaIni, fechaFin);

@@ -1,4 +1,6 @@
-package habitaciones;
+package habitaciones.extras;
+
+import habitaciones.Habitacion;
 
 import java.util.LinkedList;
 

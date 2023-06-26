@@ -1,5 +1,9 @@
 package reservas;
 
+import clientes.Cliente;
+import clientes.Email;
+import clientes.ListadoClientes;
+import clientes.Whatsapp;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

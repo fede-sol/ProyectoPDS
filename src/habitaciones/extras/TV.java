@@ -1,4 +1,4 @@
-package habitaciones;
+package habitaciones.extras;
 
 public class TV extends Extra {
     public TV(double precio) {

@@ -1,5 +1,7 @@
 package habitaciones;
 
+import habitaciones.extras.Extra;
+
 import java.util.LinkedList;
 import java.util.stream.Collectors;
 

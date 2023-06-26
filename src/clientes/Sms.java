@@ -1,19 +1,19 @@
-package reservas;
+package clientes;
 
-public class Whatsapp implements IMedioContacto {
+public class Sms implements IMedioContacto {
     
     private String celular;
 
-    public Whatsapp(String celular) {
+    public Sms(String celular) {
         this.celular = celular;
     }
-    
+
     public String getMedioContacto () {
         return celular;
     }
 
     @Override
     public String toString(){
-        return "Whatsapp";
+        return "Sms";
     }
 }

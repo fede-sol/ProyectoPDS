@@ -1,4 +1,6 @@
-package habitaciones;
+package habitaciones.extras;
+
+import habitaciones.extras.Extra;
 
 public class Despertador extends Extra {
 

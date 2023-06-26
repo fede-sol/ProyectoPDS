@@ -1,10 +1,18 @@
 package reservas;
 
+import clientes.Cliente;
+import clientes.Huesped;
+import clientes.ListadoClientes;
+import clientes.Whatsapp;
 import habitaciones.*;
-import notificaciones.IMedioNotificacion;
+import habitaciones.extras.Extra;
+import habitaciones.extras.Internet;
+import habitaciones.extras.MiniBar;
+import habitaciones.extras.Suite;
 import notificaciones.Notificador;
 import org.junit.jupiter.api.Test;
 import pagos.TarjetaCredito;
+import reservas.politicas.AnticipacionDosMeses;
 
 import java.time.LocalDate;
 import java.util.LinkedList;
@@ -53,7 +61,7 @@ class GestorReservasTest {
     @Test
     public void testPagarYNotificar(){
 
-        testReservarYNotificar();
+        testReservarYNotificar();//Corremos el método de nuevo para no copiar y pegar
 
         GestorReservas gestorReservas = new GestorReservas();
         gestorReservas.agregarObservador(new Notificador());
@@ -67,7 +75,7 @@ class GestorReservasTest {
     @Test
     public void testCancelarYNotificar(){
 
-        testReservarYNotificar();
+        testReservarYNotificar();//Corremos el método de nuevo para no copiar y pegar
 
 
         GestorReservas gestorReservas = new GestorReservas();

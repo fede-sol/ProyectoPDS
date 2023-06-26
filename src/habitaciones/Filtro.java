@@ -1,5 +1,7 @@
 package habitaciones;
 
+import habitaciones.extras.Extra;
+
 import java.time.LocalDate;
 import java.util.LinkedList;
 

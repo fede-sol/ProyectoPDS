@@ -1,4 +1,4 @@
-package reservas;
+package clientes;
 
 public interface IMedioContacto {
     public String getMedioContacto ();

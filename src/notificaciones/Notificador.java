@@ -1,5 +1,8 @@
 package notificaciones;
 
+import clientes.Email;
+import clientes.Sms;
+import clientes.Whatsapp;
 import notificaciones.email.NotificadorEmail;
 import notificaciones.sms.NotificadorSms;
 import notificaciones.whatsapp.NotificadorWhatsapp;

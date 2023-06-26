@@ -1,4 +1,4 @@
-package reservas;
+package clientes;
 
 public class Email implements IMedioContacto {
 

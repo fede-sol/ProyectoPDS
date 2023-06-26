@@ -1,11 +1,13 @@
 package habitaciones;
 
+import habitaciones.extras.Extra;
+import habitaciones.extras.Internet;
+import habitaciones.extras.MiniBar;
+import habitaciones.extras.Suite;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 

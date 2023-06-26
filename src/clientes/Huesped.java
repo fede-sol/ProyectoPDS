@@ -1,16 +1,14 @@
-package reservas;
+package clientes;
 
-public class Cliente {
+public class Huesped {
     private String nombre;
     private String apellido;
     private String dni;
-    private IMedioContacto preferenciaContacto;
 
-    public Cliente(String nombre, String apellido, String dni, IMedioContacto preferenciaContacto) {
+    public Huesped(String nombre, String apellido, String dni) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.dni = dni;
-        this.preferenciaContacto = preferenciaContacto;
     }
 
     public String getNombre() {
@@ -35,14 +33,6 @@ public class Cliente {
 
     public void setDni(String dni) {
         this.dni = dni;
-    }
-
-    public IMedioContacto getPreferenciaContacto() {
-        return preferenciaContacto;
-    }
-
-    public void setPreferenciaContacto(IMedioContacto preferenciaContacto) {
-        this.preferenciaContacto = preferenciaContacto;
     }
     
     

@@ -1,6 +1,4 @@
-package reservas;
-
-import habitaciones.GestorHabitaciones;
+package clientes;
 
 import java.util.LinkedList;
 

@@ -1,4 +1,4 @@
-package reservas;
+package reservas.politicas;
 
 public class AnticipacionQuinceDias implements IPoliticaReserva {
 

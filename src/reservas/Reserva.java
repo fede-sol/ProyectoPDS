@@ -1,5 +1,7 @@
 package reservas;
 
+import clientes.Cliente;
+import clientes.Huesped;
 import facturacion.Factura;
 import java.time.LocalDateTime;
 
@@ -7,6 +9,7 @@ import habitaciones.Disponibilidad;
 import habitaciones.Habitacion;
 import java.util.List;
 import pagos.IMedioPago;
+import reservas.politicas.IPoliticaReserva;
 
 public class Reserva {
     
