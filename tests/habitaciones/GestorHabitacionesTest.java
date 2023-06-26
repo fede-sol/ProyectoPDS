@@ -43,12 +43,13 @@ class GestorHabitacionesTest {
         h = new Suite(2,2,30000,new LinkedList<>(),10000);
         gestor.agregarHabitacion(h);
 
-
-
-
         Filtro filtro = new Filtro(LocalDate.of(2023,3,1),LocalDate.of(2023,3,7),4,extras,"Comun");
         LinkedList<Habitacion> habitacionFiltrada = gestor.filtrarHabitaciones(filtro);
-        System.out.println(habitacionFiltrada.get(0).nroHabitacion);
+
+        for (Habitacion habitacion: habitacionFiltrada) {
+            habitacion.mostrarDatos();
+        }
+
         assertEquals(1,habitacionFiltrada.size());
     }
 

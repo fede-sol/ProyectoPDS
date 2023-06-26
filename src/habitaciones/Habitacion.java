@@ -1,6 +1,7 @@
 package habitaciones;
 
 import java.util.LinkedList;
+import java.util.stream.Collectors;
 
 public abstract class Habitacion {
 
@@ -62,5 +63,13 @@ public abstract class Habitacion {
 
     @Override
     public abstract String toString();
+
+    public void mostrarDatos() {
+        System.out.println("Nro Habitacion: " + getNroHabitacion()
+                + ", Cantidad de Personas: " + getCantPersonas()
+                + ", Tipo de Habitacion: " + toString()
+                + ", Extras: " + listaExtras.stream().map(Object::toString).collect(Collectors.joining(", ")));
+    }
+
 
 }
